@@ -1,0 +1,34 @@
+根据文件类型加载vim缩进脚本
+if has("autocmd")
+  filetype plugin indent on
+endif
+
+
+常用设置
+set showcmd			" Show (partial) command in status line.
+set showmatch       " Show matching brackets.
+set ignorecase      " Do case insensitive matching
+set smartcase       " Do smart case matching
+set incsearch       " Incremental search
+set autowrite       " Automatically save before commands like :next and :make
+set hidden          " Hide buffers when they are abandoned
+
+set hls				" hlsearch 高亮显示搜索到的内容
+set cindent
+set smarttab
+set showmatch
+set smartindent
+set autoindent
+set nocompatible
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+在多个窗口中切换
+nmap <C-H> <C-W>h
+nmap <C-J> <C-W>j
+nmap <C-K> <C-W>k
+nmap <C-L> <C-W>l
+
+设置tags
+set tags=/home/ldh/kernel_tags/ubuntu-tags
