@@ -1,0 +1,32 @@
+git config --global user.name "ludonghai715"
+git config --global user.email ludonghai715@gmail.com
+
+应为git是通过ssh加密传输的，所以需要需要key
+
+先安装ssh-client:	sudo apt-get install ssh-client
+cd ~/.ssh
+备份先前的key
+mkdir key_back
+cp * key_back
+
+创建key
+ssh-keygen -t rsa -C "ludonghai715@gmail.com"
+产生两个文件：id_rsa, id_ras.pub
+复制id_ras.pub里的内容到github.com的key里, 注意不要有空格、换行。
+
+mkdir ludonghai
+cd ludonghai
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin git@github.com:ludonghai715/ludonghai.git
+git push -u origin master
+
+
+现有的 Git 仓库？
+
+cd existing_git_repo
+git remote add origin git@github.com:ludonghai715/ludonghai.git
+git push -u origin master
+		
