@@ -1,5 +1,4 @@
-#ÏÈÏÂÔØxpinyinÄ£¿é, http://pypi.python.org/pypi/xpinyin/
-
+#å…ˆä¸‹è½½xpinyinæ¨¡å—, http://pypi.python.org/pypi/xpinyin/
 
 from xlrd import open_workbook, cellname
 from xlutils.copy import copy
