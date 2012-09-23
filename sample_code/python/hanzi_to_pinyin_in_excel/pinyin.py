@@ -1,3 +1,6 @@
+#охобтьxpinyinдё©И, http://pypi.python.org/pypi/xpinyin/
+
+
 from xlrd import open_workbook, cellname
 from xlutils.copy import copy
 from xpinyin import Pinyin
