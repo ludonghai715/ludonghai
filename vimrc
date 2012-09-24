@@ -39,10 +39,13 @@ set showmatch
 
 
 "根据文件类型自动加载相应的插件
+filetype on
 filetype plugin on  
+filetype plugin indent on
 
 "不兼容vi
 set nocompatible               
 
 "设置python文件的补全为pysmell
 autocmd FileType python set omnifunc=pysmell#Complete
+
