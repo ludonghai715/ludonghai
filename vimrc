@@ -49,3 +49,5 @@ set nocompatible
 "设置python文件的补全为pysmell
 autocmd FileType python set omnifunc=pysmell#Complete
 
+"html文件特殊的缩进
+autocmd FileType html,html set shiftwidth=2 | set expandtab | set tabstop=2 | set softtabstop=2
